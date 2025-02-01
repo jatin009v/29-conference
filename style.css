@@ -531,7 +531,15 @@ h3{
 }
 
 
-
+@media screen and (max-width: 600px) {
+    img {
+        max-width: 100%; /* Ensure it doesn’t overflow */
+        max-height: 400px; /* Adjust height for portrait images */
+        object-fit: contain; /* Maintain aspect ratio without cropping */
+        display: block; /* Prevent inline spacing issues */
+        margin: auto; /* Center images */
+    }
+}
 
 
 
